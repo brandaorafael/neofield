@@ -1,0 +1,25 @@
+{
+  "name": "neofield",
+  "version": "1.0.0",
+  "description": "Project of a Agrotech",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+  " url": "git@github.com:brandaorafael/neofield.git"
+  },
+  "author": "Rafael Augusto Brandão (brandaorafael)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "lodash": "^4.13.1",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "multer": "^1.1.0",
+    "nodemon": "^1.9.1"
+  }
+}
