@@ -24,7 +24,7 @@ module.exports = function(){
   	//Views
   	var views = {};
   	views.landingPage = {};
-  	views.landingPage.index = require(__dirname + '/modules/views/landingPage.js')();
+  	views.landingPage.index = require(__dirname + '/modules/views/landingPage.js')(app.path);
 
 	//Teste
 	var teste = {};

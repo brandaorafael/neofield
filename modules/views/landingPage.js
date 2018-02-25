@@ -1,9 +1,9 @@
-module.exports = function (){
+module.exports = function (path){
 
   return {
     get: function (req, res) {
 
-    	return res.json({success: true});
+    	return res.render(path.resolve('views/landingPage.html'));
 
     }
   }
