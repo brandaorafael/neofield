@@ -20,11 +20,19 @@ module.exports = function(){
 	app.multer  		= require('multer');
 	// Arquivo de configuracoes
   	// app.config 			= require('./config')();
+	// https://github.com/nodemailer/nodemailer
+	var nodemailer = require('nodemailer');
+  	var transporter = nodemailer.createTransport('smtps://neofield.contato@gmail.com:Toronto123@smtp.gmail.com');
 
   	//Views
   	var views = {};
   	views.landingPage = {};
   	views.landingPage.index = require(__dirname + '/modules/views/landingPage.js')(app.path);
+
+  	//Contato
+  	var contato = {};
+  	contato.controllers = {};
+  	contato.controllers.contato = require(__dirname + '/modules/contato/contato-controller.js')(transporter);
 
 	//Teste
 	var teste = {};
@@ -49,6 +57,7 @@ module.exports = function(){
 	var routes = {};
 	routes.routes = require(__dirname + '/routes/router.js')(app.express, routes);
 	routes.v1 = {};
+	routes.v1.contato = require(__dirname + '/routes/v1/contato.js')(contato);
 	routes.v1.teste = require(__dirname + '/routes/v1/teste.js')(teste);
 	routes.view = {};
 	routes.view.landingPage = require(__dirname + '/routes/views/landingPage.js')(views);
