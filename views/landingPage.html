@@ -46,13 +46,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#map">Location</a>
+            <a class="nav-link js-scroll-trigger" href="#map">Localização</a>
           </li>
         </ul>
       </div>
@@ -65,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <img src="img/logo.png" width="400px" />
+            <img src="img/logo.png" width="600px" />
             <p class="intro-text" >Através da gestão de tecnologia de informação e dados analíticos, otimizamos todos os seus processos agropecuários.</p>
             <a href="#about" class="btn btn-circle js-scroll-trigger">
               <i class="fa fa-angle-double-down animated"></i>
@@ -76,15 +76,15 @@
     </div>
   </header>
 
-  <!-- About Section -->
+   <!-- About Section -->
   <section id="about" class="content-section text-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>About Neofield</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nibh lacus, pulvinar non urna eget, venenatis posuere purus. Proin vestibulum massa ac luctus porta.</p>
-          <p>Aenean sodales egestas ultricies. Suspendisse non laoreet ex. Mauris viverra ipsum lacus, ac maximus leo commodo ut.</p>
-          <p>Donec ornare fermentum lacus, blandit condimentum nulla tristique vitae. Nulla euismod vehicula commodo. Donec cursus ante eget tortor egestas ornare. Maecenas suscipit enim eget rutrum varius. Proin sit amet pretium diam. Praesent efficitur pharetra justo id hendrerit.</p>
+          <h2>Sobre a Neofield</h2>
+          <p>A NeoField é uma empresa de tecnologia dedicada ao assessoramento à tomada de decisão com foco no produtor agrícola. Seus produtos visão otimizar todos os processos agropecuários através da gestão da tecnologia de informação e geração de dados analíticos. </p>
+          <p>A NeoField desenvolve soluções de monitoramento em tempo real de cultivos agrícolas para auxílio na tomada de decisão e otimização do consumo de matérias primas através de uma rede de dispositivos em solo e aéreo. Dados são coletados e disponibilizados ao produtor para embasar decisões que impactam diretamente na operação agrícola e na produção. Entre em contato conosco através do e-mail: contato@neofield.com.br .</p>
+          <p>NeoField. Agropecuária de precisão.</p>
         </div>
       </div>
     </div>
@@ -95,7 +95,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
+          <h2 class="section-heading text-uppercase">Contato</h2>
           <h3 class="section-subheading text-white">Deixe sua mensagem</h3>
         </div>
       </div>
@@ -126,8 +126,7 @@
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <!-- <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" ng-click="appCtrl.teste()" type="submit">Enviar Messagem</button> -->
-                <a class="btn btn-primary btn-xl text-uppercase" ng-click="appCtrl.sendMail()" type="submit">Enviar Mensagem</a>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" ng-click="appCtrl.sendMail()" type="submit">Enviar Messagem</button>
               </div>
             </div>
           </form>
@@ -138,31 +137,31 @@
 
   <!-- Map Section -->
   <section class="content-map text-center" >
-    <h2 class="section-heading text-uppercase">Location</h2>
+    <h2 class="section-heading text-uppercase">Localização</h2>
     <h5 class="section-subheading text-white">Avenida Presidente Juscelino Kubitschek, 2041 - Torre D - Vila Olimpia, São Paulo - SP, 04543-011</h3>
-    <div id="map" ></div>
-  </section>
+      <div id="map" ></div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container text-center">
-      <p>Copyright &copy; NeoField 2018</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; NeoField 2018</p>
+      </div>
+    </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLDw5Py2EF61-Luxq8dnxSPm_QltAcatI&sensor=false"></script>
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLDw5Py2EF61-Luxq8dnxSPm_QltAcatI&sensor=false"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/neofield.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/neofield.min.js"></script>
 
-</body>
+  </body>
 
-</html>
+  </html>

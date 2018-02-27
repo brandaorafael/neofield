@@ -60,9 +60,9 @@ function init() {
     center: new google.maps.LatLng(-23.591299, -46.689990), // New York
 
     // Disables the default Google Maps UI components
-    disableDefaultUI: true,
-    scrollwheel: false,
-    draggable: false,
+    // disableDefaultUI: true,
+    // scrollwheel: true,
+    // draggable: false,
 
     // How you would like to style the map.
     // This is where you would paste any style found on Snazzy Maps.

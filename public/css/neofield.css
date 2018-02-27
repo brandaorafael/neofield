@@ -124,12 +124,14 @@ a:focus, a:hover {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/agriculture.jpg") no-repeat bottom center scroll;
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)
+    ), url("../img/agriculture.jpg") no-repeat center center;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    
 }
 
 .masthead .intro-body {
@@ -201,6 +203,12 @@ a:focus, a:hover {
 #map {
   width: 100%;
   height: 300px;
+}
+
+#grad1 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(red, yellow); /* Standard syntax (must be last) */
 }
 
 @media (min-width: 992px) {
