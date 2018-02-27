@@ -117,6 +117,12 @@ a:focus, a:hover {
   }
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
 .masthead {
   display: table;
   width: 100%;
